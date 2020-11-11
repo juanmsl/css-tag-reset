@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;900&display=swap');
+
+:root {
+    --line-height: 1.75em;
+    --padding: 1em;
+    --margin: 1em;
+    --gap: 2em;
+
+    --color-primary: #4086CC;
+    --color-secondary: #4086CC;
+    --color-common: #353535;
+
+    --color-gray-1: #252525;
+    --color-gray-2: #555555;
+    --color-gray-3: #858585;
+    --color-gray-4: #B5B5B5;
+    --color-gray-5: #E5E5E5;
+    --color-gray-6: #F5F5F5;
+}
+
+:root {
+    font-size: 14px;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    line-height: var(--line-height);
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--color-common);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    line-height: 1.75em;
+    margin: 0.5em 0;
+    color: var(--color-primary);
+}
+
+h1 {
+    font-size: 2.8571428571428600em;
+}
+
+h2 {
+    font-size: 2.2857142857142900em;
+}
+
+h3 {
+    font-size: 1.7142857142857100em;
+}
+
+h4 {
+    font-size: 1.1428571428571400em;
+}
+
+h5 {
+    font-size: 0.8571428571428570em;
+}
+
+h6, small, sub, sup {
+    font-size: 0.6428571428571430em;
+}
+
+p, a, span, label,
+abbr, b, strong,
+pre {
+    padding: calc(var(--padding) / 2) 0 var(--padding);
+    margin: 0;
+    line-height: var(--line-height);
+    font-weight: normal;
+}
+
+p, a, span, abbr,
+b, strong,
+button, input, optgroup, select, textarea {
+    font-size: 1em;
+}
+
+pre, label, legend, code, kbd, samp,
+input, button,
+[type="button"], [type="reset"], [type="submit"] {
+    font-size: .8em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    border-width: 1px;
+    border-color: var(--color-gray-6);
+    margin: 1em 0;
+}
+
+pre, code, kbd, samp {
+    font-family: monospace, monospace;
+    padding: var(--padding);
+    background: var(--color-gray-6);
+}
+
+code, kbd, samp {
+    display: inline-block;
+    padding: 0 calc(var(--padding) / 2 );
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline dotted;
+    cursor: help;
+}
+
+b, strong {
+    font-weight: bolder;
+}
+
+sub, sup {
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+img {
+    border-style: none;
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* Forms
+   ========================================================================== */
+
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    background: white;
+    padding: calc(var(--padding) / 2) var(--padding);
+    border: 1px solid;
+    color: inherit;
+    cursor: pointer;
+    line-height: inherit;
+}
+
+input {
+    padding: calc(var(--padding) / 2) var(--padding);
+    border: 1px solid;
+    color: inherit;
+    background: white;
+    line-height: inherit;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+    display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+    display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+    display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+    display: none;
+}
